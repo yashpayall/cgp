@@ -1,0 +1,149 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-color: #000000 !important;
+}
+@font-face {
+  font-family: "bebas-neus-cyrillic";
+  src: url("/fonts/babes.ttf");
+  font-weight: 400;
+}
+body {
+  background: #000;
+}
+.infrastructure-bg {
+  position: relative;
+  width: 100%;
+}
+
+.infrastructure-bg:after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  background: url("/images/hero-bg.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+.Turbocharge-bg {
+  position: relative !important;
+  width: 100%;
+}
+.Turbocharge-bg:after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  background: url("/images/Turbocharge-bg.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  z-index: -11;
+}
+.Turbocharge-bg button {
+  cursor: pointer;
+}
+.Collaboration-bg {
+  position: relative !important;
+  width: 100%;
+}
+.Collaboration-bg:after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  background: url("/images/Collaboration-bg.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  z-index: -11;
+}
+.Turbocharge-bg button {
+  cursor: pointer;
+}
+.Spectrum-bg {
+  position: relative;
+  width: 100%;
+}
+.Spectrum-bg:after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  background: url("/images/Spectrum-bg.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  z-index: -11;
+}
+
+.btn {
+  background: linear-gradient(
+    270deg,
+    #a9a9a9 0%,
+    #fefdfd 42.79%,
+    #b2b1b1 76.97%,
+    #b7b7b7 97.29%
+  );
+
+  transition: 0.3s ease-in-out !important ;
+}
+.btn:hover {
+  background: black;
+}
+.debugging_bg_img {
+  background-image: url("/images/debugging-bg-img.png");
+}
+@media (max-width: 768px) {
+  .infrastructure-bg:after {
+    background-image: url("/images/hero-bg-img-tablet.png");
+  }
+  .Turbocharge-bg:after {
+    background: url("/images/Turbocharge-bg-img-tablet.png");
+  }
+  .debugging_bg_img {
+    background-image: url("/images/debugging-bg-img-tablet.png");
+  }
+}
+@media (max-width: 320px) {
+  .infrastructure-bg:after {
+    background-image: url("/images/hero-bg-img-mobile.png");
+  }
+  .Turbocharge-bg:after {
+    background-image: url("/images/Turbocharge-bg-img-mobile.png");
+  }
+  .debugging_bg_img {
+    background-image: url("/images/debugging-bg-img-mobile.png");
+  }
+}
+
+/* PRICING */
+.Pricing-bg {
+  position: relative;
+  width: 100%;
+}
+.Pricing-bg:after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  background: url("/images/Pricing-bg.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  z-index: -11;
+}
